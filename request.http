@@ -1,0 +1,40 @@
+###
+POST http://localhost:8080/api/sock
+Content-Type: application/json
+
+{
+  "cottonPart":40,
+  "size":"SMALL_36",
+  "color":"BLACK",
+  "quantity":5
+}
+
+
+###
+GET http://localhost:8080/api/sock?color=BLACK
+###
+GET http://localhost:8080/api/sock?color=RED
+###
+GET http://localhost:8080/api/sock?ccottonmax=50
+###
+PUT http://localhost:8080/api/sock?ccottonmax=50.
+###
+PUT http://localhost:8080/api/sock
+Content-Type: application/json
+
+{
+  "cottonPart":40,
+  "size":"SMALL_36",
+  "color":"BLACK",
+  "quantity":5
+}
+###
+DELETE http://localhost:8080/api/sock
+Content-Type: application/json
+
+{
+"cottonPart":40,
+"size":"SMALL_36",
+"color":"BLACK",
+"quantity":5
+}
